@@ -34,6 +34,9 @@ opacity: .95;
 /* End body rules */
 
 /* Start form  attributes */
+#cb{
+    z-index: 0;
+}
 form {
     width: 450px;
     min-height: 500px;
@@ -62,7 +65,7 @@ form .con {
 header {
     margin: 2% auto 10% auto;
     text-align: center;
-    z-index: 999;
+    z-index: '999';
 }
 /* Login title form form */
 header h2 {
@@ -72,7 +75,8 @@ header h2 {
     z-index: 999;
 }
 /*  A welcome message or an explanation of the login form */
-header p {letter-spacing: 0.05em;
+header p {
+    letter-spacing: 0.05em;
     z-index: 999;}
 
 

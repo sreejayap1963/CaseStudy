@@ -58,7 +58,10 @@ function addlist() {
             // console.log(response);
             var op = "";
             for (let i = 0; i < response.length; i++) {
+                if(response[i].completed==true)
                 op += "<div class='d-flex align-items-center'><label><input type='checkbox' class='option-input radio' id='cb' onclick='todo(this)'><span class='label-text'>" + response[i].title + "</span></label></div><br>";
+                else
+                op += "<div class='d-flex align-items-center'><label><font color='red'><input type='checkbox' class='option-input radio' id='cb' onclick='todo(this)'><span class='label-text'>" + response[i].title + "</span></label></font></div><br>";
             }
             //console.log(op);
             d.innerHTML = op;
@@ -78,7 +81,9 @@ function todo(cb) {
     }
     else{
         count--;
+        if (count == 5) {
+            alert("Congrats!!!You have Successfully Completed 5 Tasks");
     }
 }
-
+}
 
