@@ -17,5 +17,5 @@ function validate(show) {
     }
 }
 function show(){
-    window.open = "Home.html";
+    window.location.href = "Home.html";
 }
